@@ -7655,6 +7655,1047 @@ For function of $\arcsin(\sqrt{x^{2}})=\arcsin x = x + o(x^2)$</p>
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9414dca4-30e9-46fb-87bf-3894cf948808">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Results">Results<a class="anchor-link" href="#Results">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=268ee2a5-d369-4369-af2f-45ebfba0fe07">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">file_path</span> <span class="o">=</span> <span class="s1">'result_table.xlsx'</span>
+<span class="n">df_TaxHistory</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'factTaxHistory'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_Property</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'dimProperty'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_Address</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'dimAddress'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_Description</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'dimDescription'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_Utility</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'dimUtility'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=93f0db52-7964-444a-8ba1-942b61bbd793">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_TaxHistory</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>propertyId</th>
+<th>taxYear</th>
+<th>taxPaid</th>
+<th>value</th>
+<th>taxHistoryId</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>2023</td>
+<td>11392</td>
+<td>456311</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>1</td>
+<td>2022</td>
+<td>11671</td>
+<td>377301</td>
+<td>2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>1</td>
+<td>2021</td>
+<td>8401</td>
+<td>316422</td>
+<td>3</td>
+</tr>
+<tr>
+<th>3</th>
+<td>1</td>
+<td>2020</td>
+<td>6786</td>
+<td>316422</td>
+<td>4</td>
+</tr>
+<tr>
+<th>4</th>
+<td>1</td>
+<td>2019</td>
+<td>6950</td>
+<td>330851</td>
+<td>5</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>137</th>
+<td>16</td>
+<td>2020</td>
+<td>1018357</td>
+<td>53139653</td>
+<td>138</td>
+</tr>
+<tr>
+<th>138</th>
+<td>16</td>
+<td>2019</td>
+<td>1330398</td>
+<td>52941572</td>
+<td>139</td>
+</tr>
+<tr>
+<th>139</th>
+<td>16</td>
+<td>2018</td>
+<td>1296826</td>
+<td>50494300</td>
+<td>140</td>
+</tr>
+<tr>
+<th>140</th>
+<td>16</td>
+<td>2017</td>
+<td>1334844</td>
+<td>45284840</td>
+<td>141</td>
+</tr>
+<tr>
+<th>141</th>
+<td>16</td>
+<td>2014</td>
+<td>781273</td>
+<td>13701300</td>
+<td>142</td>
+</tr>
+</tbody>
+</table>
+<p>142 rows × 5 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=35294c7b-3624-4869-aded-d35ee272605d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_Property</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>propertyID</th>
+<th>addressId</th>
+<th>descriptionID</th>
+<th>utilityID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>13</td>
+<td>13</td>
+<td>5</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>12</td>
+<td>14</td>
+<td>8</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>1</td>
+<td>16</td>
+<td>7</td>
+</tr>
+<tr>
+<th>5</th>
+<td>6</td>
+<td>8</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<th>6</th>
+<td>7</td>
+<td>9</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<th>7</th>
+<td>8</td>
+<td>11</td>
+<td>7</td>
+<td>13</td>
+</tr>
+<tr>
+<th>8</th>
+<td>9</td>
+<td>15</td>
+<td>9</td>
+<td>2</td>
+</tr>
+<tr>
+<th>9</th>
+<td>10</td>
+<td>14</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<th>10</th>
+<td>11</td>
+<td>17</td>
+<td>8</td>
+<td>10</td>
+</tr>
+<tr>
+<th>11</th>
+<td>12</td>
+<td>7</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<th>12</th>
+<td>13</td>
+<td>3</td>
+<td>2</td>
+<td>15</td>
+</tr>
+<tr>
+<th>13</th>
+<td>14</td>
+<td>6</td>
+<td>17</td>
+<td>12</td>
+</tr>
+<tr>
+<th>14</th>
+<td>15</td>
+<td>10</td>
+<td>4</td>
+<td>14</td>
+</tr>
+<tr>
+<th>15</th>
+<td>16</td>
+<td>5</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<th>16</th>
+<td>17</td>
+<td>16</td>
+<td>12</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=906f9ee6-c7ec-4db8-9199-28085c4ae43d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_Address</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>state</th>
+<th>countyFIPS</th>
+<th>city</th>
+<th>streetAddress</th>
+<th>zipcode</th>
+<th>latitude</th>
+<th>longitude</th>
+<th>addressId</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>8715 W Highway 71 #4_4206</td>
+<td>78735</td>
+<td>30.250511</td>
+<td>-97.896490</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>6508 Steep Cactus Trl #20</td>
+<td>78735</td>
+<td>30.244486</td>
+<td>-97.877050</td>
+<td>2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>2601 Scofield Ridge Pkwy</td>
+<td>78727</td>
+<td>30.428510</td>
+<td>-97.697044</td>
+<td>3</td>
+</tr>
+<tr>
+<th>3</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>7603 Woodstone Cv</td>
+<td>78749</td>
+<td>30.206296</td>
+<td>-97.835752</td>
+<td>4</td>
+</tr>
+<tr>
+<th>4</th>
+<td>TX</td>
+<td>48491</td>
+<td>Austin</td>
+<td>10800 Lakeline Blvd</td>
+<td>78717</td>
+<td>30.482453</td>
+<td>-97.793530</td>
+<td>5</td>
+</tr>
+<tr>
+<th>5</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>2601 Scofield Ridge Pkwy</td>
+<td>78727</td>
+<td>30.430732</td>
+<td>-97.697007</td>
+<td>6</td>
+</tr>
+<tr>
+<th>6</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>9906 Hundred Oaks Cir Unit A</td>
+<td>78750</td>
+<td>30.421557</td>
+<td>-97.800574</td>
+<td>7</td>
+</tr>
+<tr>
+<th>7</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>403 E 32nd St Unit B</td>
+<td>78705</td>
+<td>30.294802</td>
+<td>-97.733620</td>
+<td>8</td>
+</tr>
+<tr>
+<th>8</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>6505 Cat Creek Trl</td>
+<td>78731</td>
+<td>30.360643</td>
+<td>-97.779975</td>
+<td>9</td>
+</tr>
+<tr>
+<th>9</th>
+<td>TX</td>
+<td>48491</td>
+<td>Austin</td>
+<td>8100 Anderson Mill Rd</td>
+<td>78729</td>
+<td>30.461880</td>
+<td>-97.757279</td>
+<td>10</td>
+</tr>
+<tr>
+<th>10</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>12201 Dessau Rd</td>
+<td>78754</td>
+<td>30.384135</td>
+<td>-97.647495</td>
+<td>11</td>
+</tr>
+<tr>
+<th>11</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>8715 W Highway 71 Austin</td>
+<td>78735</td>
+<td>30.248500</td>
+<td>-97.898150</td>
+<td>12</td>
+</tr>
+<tr>
+<th>12</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>6508 Steep Cactus Trl</td>
+<td>78735</td>
+<td>30.241316</td>
+<td>-97.877136</td>
+<td>13</td>
+</tr>
+<tr>
+<th>13</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>12205 N Lamar Blvd</td>
+<td>78753</td>
+<td>30.398592</td>
+<td>-97.678024</td>
+<td>14</td>
+</tr>
+<tr>
+<th>14</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>12205 N Lamar Blvd</td>
+<td>78753</td>
+<td>30.398603</td>
+<td>-97.679090</td>
+<td>15</td>
+</tr>
+<tr>
+<th>15</th>
+<td>TX</td>
+<td>48491</td>
+<td>Austin</td>
+<td>10800 Lakeline Blvd #14103</td>
+<td>78717</td>
+<td>30.481613</td>
+<td>-97.793365</td>
+<td>16</td>
+</tr>
+<tr>
+<th>16</th>
+<td>TX</td>
+<td>48453</td>
+<td>Austin</td>
+<td>12312 Dellrey Dr Unit A</td>
+<td>78758</td>
+<td>30.411872</td>
+<td>-97.699229</td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4c781603-d5f5-42b1-b4c1-608ab688d76c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_Description</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>homeType</th>
+<th>homeStatus</th>
+<th>textDescription</th>
+<th>yearBuilt</th>
+<th>price</th>
+<th>livingArea</th>
+<th>lotSize</th>
+<th>descriptionId</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>duplex_triplex</td>
+<td>for_rent</td>
+<td>Rare find of a 3 Bed 2 bath, with private yard...</td>
+<td>1983.0</td>
+<td>1725.0</td>
+<td>1914 sqft</td>
+<td>25700 sqft</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>apartment</td>
+<td>other</td>
+<td>Great location: close to domain and mopac expr...</td>
+<td>1999.0</td>
+<td>117594538.0</td>
+<td>711 sqft</td>
+<td>26.37 Acres</td>
+<td>2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>single_family</td>
+<td>for_rent</td>
+<td>Available NOW! LEASE THROUGH JULY 2024 ONLY! A...</td>
+<td>1934.0</td>
+<td>1600.0</td>
+<td>630 sqft</td>
+<td>7492 sqft</td>
+<td>3</td>
+</tr>
+<tr>
+<th>3</th>
+<td>apartment</td>
+<td>for_rent</td>
+<td>Better-than-new apartments situated north of d...</td>
+<td>2015.0</td>
+<td>7925.0</td>
+<td>4344 sqft</td>
+<td>16.96 Acres</td>
+<td>4</td>
+</tr>
+<tr>
+<th>4</th>
+<td>multi_family</td>
+<td>sold</td>
+<td>This is a 2070 square foot, 2.0 bathroom, apar...</td>
+<td>1983.0</td>
+<td>542231.0</td>
+<td>2070 sqft</td>
+<td>9091 sqft</td>
+<td>5</td>
+</tr>
+<tr>
+<th>5</th>
+<td>duplex_triplex</td>
+<td>for_rent</td>
+<td>West side duplex in a hilly, wooded neighborho...</td>
+<td>1983.0</td>
+<td>1995.0</td>
+<td>1178 sqft</td>
+<td>17454 sqft</td>
+<td>6</td>
+</tr>
+<tr>
+<th>6</th>
+<td>apartment</td>
+<td>for_rent</td>
+<td>Welcome to The Lucent Apartments located in Au...</td>
+<td>2021.0</td>
+<td>10933.0</td>
+<td>6543 sqft</td>
+<td>17.58 Acres</td>
+<td>7</td>
+</tr>
+<tr>
+<th>7</th>
+<td>duplex_triplex</td>
+<td>for_rent</td>
+<td>This is a 1632 square foot, 2.0 bathroom, apar...</td>
+<td>1984.0</td>
+<td>1500.0</td>
+<td>816 sqft</td>
+<td>6630 sqft</td>
+<td>8</td>
+</tr>
+<tr>
+<th>8</th>
+<td>apartment</td>
+<td>other</td>
+<td>This is a 287272 square foot, apartment home. ...</td>
+<td>2021.0</td>
+<td>88483962.0</td>
+<td>287272 sqft</td>
+<td>17.68 Acres</td>
+<td>9</td>
+</tr>
+<tr>
+<th>9</th>
+<td>other</td>
+<td>other</td>
+<td>This 1481 square foot townhome home has 3 bedr...</td>
+<td>NaN</td>
+<td>417900.0</td>
+<td>1481 sqft</td>
+<td>NaN</td>
+<td>10</td>
+</tr>
+<tr>
+<th>10</th>
+<td>apartment</td>
+<td>for_rent</td>
+<td>Heritage Woods is conveniently located on Nort...</td>
+<td>NaN</td>
+<td>14756.0</td>
+<td>7966 sqft</td>
+<td>NaN</td>
+<td>11</td>
+</tr>
+<tr>
+<th>11</th>
+<td>other</td>
+<td>other</td>
+<td>This home is located at 10800 Lakeline Blvd #...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>12</td>
+</tr>
+<tr>
+<th>12</th>
+<td>apartment</td>
+<td>for_rent</td>
+<td>Bee Caves Vistas townhomes offer luxury, comfo...</td>
+<td>NaN</td>
+<td>8288.0</td>
+<td>4505 sqft</td>
+<td>NaN</td>
+<td>13</td>
+</tr>
+<tr>
+<th>13</th>
+<td>apartment</td>
+<td>other</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>1298.0</td>
+<td>821 sqft</td>
+<td>NaN</td>
+<td>14</td>
+</tr>
+<tr>
+<th>14</th>
+<td>apartment</td>
+<td>for_rent</td>
+<td>Our luxurious garden style community boasts am...</td>
+<td>NaN</td>
+<td>12233.0</td>
+<td>7001 sqft</td>
+<td>NaN</td>
+<td>15</td>
+</tr>
+<tr>
+<th>15</th>
+<td>apartment</td>
+<td>other</td>
+<td>This 1124 square foot apartment home has 2 bed...</td>
+<td>2015.0</td>
+<td>NaN</td>
+<td>1124 sqft</td>
+<td>NaN</td>
+<td>16</td>
+</tr>
+<tr>
+<th>16</th>
+<td>apartment</td>
+<td>for_rent</td>
+<td>Prepare to enjoy the best nightlife and energy...</td>
+<td>NaN</td>
+<td>9795.0</td>
+<td>8481 sqft</td>
+<td>NaN</td>
+<td>17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b5a20106-b6e6-4ee9-8050-3099afd80bc4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_Utility</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>bathrooms</th>
+<th>bedrooms</th>
+<th>hasGarage</th>
+<th>hasCooling</th>
+<th>hasHeating</th>
+<th>hasPrivatePool</th>
+<th>utilityId</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>2</td>
+<td>0</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>1</td>
+</tr>
+<tr>
+<th>1</th>
+<td>0</td>
+<td>0</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>2</td>
+</tr>
+<tr>
+<th>2</th>
+<td>2</td>
+<td>2</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>3</td>
+</tr>
+<tr>
+<th>3</th>
+<td>2</td>
+<td>3</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>4</td>
+</tr>
+<tr>
+<th>4</th>
+<td>0</td>
+<td>9</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>5</td>
+</tr>
+<tr>
+<th>5</th>
+<td>11</td>
+<td>11</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>6</td>
+</tr>
+<tr>
+<th>6</th>
+<td>2</td>
+<td>2</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>7</td>
+</tr>
+<tr>
+<th>7</th>
+<td>1</td>
+<td>1</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>8</td>
+</tr>
+<tr>
+<th>8</th>
+<td>0</td>
+<td>3</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>9</td>
+</tr>
+<tr>
+<th>9</th>
+<td>1</td>
+<td>2</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>10</td>
+</tr>
+<tr>
+<th>10</th>
+<td>10</td>
+<td>12</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>11</td>
+</tr>
+<tr>
+<th>11</th>
+<td>12</td>
+<td>15</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>12</td>
+</tr>
+<tr>
+<th>12</th>
+<td>10</td>
+<td>10</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>13</td>
+</tr>
+<tr>
+<th>13</th>
+<td>7</td>
+<td>7</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>14</td>
+</tr>
+<tr>
+<th>14</th>
+<td>1</td>
+<td>1</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=206efda6-fe77-49c1-a8df-ba0c21471a9d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
