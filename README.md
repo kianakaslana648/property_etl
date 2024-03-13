@@ -19,6 +19,16 @@ For this case study, I chose to construct a fact table for tax history assessmen
 
 I utilized ***Spark*** to implement the ETL processes to extract and integrate the source data of scraped json files from ***Zillow*** and ***Realtor***, transform the data into a relational table schema, load into the destination of an excel file. (In practical cases, insert or upsert actions should be operated to merge data into a data warehouse)
 
+Quick access to the report page: [Report.html](https://kianakaslana648.github.io/property_etl/)
+
+### File Use
+- Property_ETL.ipynb, the notebook doing the whole ETL process;
+- Report.html, the report explaining the approaches used;
+- Report.ipynb, the notebook used to generate the report;
+- requirement.txt, the python dependencies required;
+- result_table.xlsx, the result excel file containing the result tables;
+- ZIP_COUNTY_122023.xlsx, the file used in Property_ETL.ipynb to convert zip code into county fips code.
+
 ### Data Consistency
 
 To keep data consistency among different data sources, there are approaches to set feature vectors for each record and common ML methods (such as GlueETL FindMatches) to deduplicate. However, in this case, the pair of latitude and longitude could be used to identify a unique property. We can prove that through merging by or deduplicating by the (lat, lon) pair of rounded-up values to 3 decimals, we can set a control that property records with distance detected within 80 metres are recognized as the same property. (Or more strictly, choosing to round up to 4 decimals leads to a limit of 8 metres)
