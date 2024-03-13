@@ -39,7 +39,7 @@ We can use latitude and longitude to identify the properties by using (lat, lon)
 
 We can prove that when we have a maximum bias of $10^{-4}$ for both lat and lon, we will control the distance of two places under 10 meters; and when we have a maximum bias of $10^{-3}$ for both lat and lon, we will control the distance of two places under 80 meters. So, by rounding up the latitude and longitude to four decimal places, we can deduplicate by (lat, lon) pair to ensure two properties are at least in the same building. So we can deduplicate by (lat, lon) pair plus some other attributes of properties.
 
-See more details of the proof in **Report.html**
+See more details of the proof in [Report.html](https://kianakaslana648.github.io/property_etl/)
 
 ### Some strategies to handle the Data Quality Issues
 
