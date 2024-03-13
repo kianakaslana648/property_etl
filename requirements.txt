@@ -1,0 +1,267 @@
+aiofiles==23.2.1
+aiohttp==3.9.3
+aiosignal==1.3.1
+alembic==1.13.1
+amqp==5.2.0
+anyio==4.3.0
+apache-airflow==2.8.3
+apache-airflow-providers-celery==3.6.0
+apache-airflow-providers-common-io==1.3.0
+apache-airflow-providers-common-sql==1.11.0
+apache-airflow-providers-ftp==3.7.0
+apache-airflow-providers-google==10.1.0
+apache-airflow-providers-http==4.9.1
+apache-airflow-providers-imap==3.5.0
+apache-airflow-providers-smtp==1.6.1
+apache-airflow-providers-sqlite==3.7.1
+apispec==6.4.0
+argcomplete==3.2.2
+asgiref==3.7.2
+asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1698341106958/work
+attrs==23.2.0
+Babel==2.14.0
+backoff==2.2.1
+billiard==4.2.0
+blinker==1.7.0
+cachelib==0.9.0
+cachetools==5.3.3
+cattrs==23.2.3
+celery==5.3.6
+certifi==2024.2.2
+cffi==1.16.0
+chardet==5.2.0
+charset-normalizer==3.3.2
+click==8.1.7
+click-didyoumean==0.3.0
+click-plugins==1.1.1
+click-repl==0.3.0
+clickclick==20.10.2
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
+colorlog==4.8.0
+comm @ file:///home/conda/feedstock_root/build_artifacts/comm_1704278392174/work
+ConfigUpdater==3.2
+connexion==2.14.2
+country-converter==1.2
+cron-descriptor==1.4.3
+croniter==2.0.1
+cryptography==41.0.7
+db-dtypes==1.2.0
+debugpy @ file:///D:/bld/debugpy_1707444544473/work
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
+deltalake==0.16.0
+Deprecated==1.2.14
+dill==0.3.1.1
+dnspython==2.6.1
+docutils==0.20.1
+email-validator==1.3.1
+et-xmlfile==1.1.0
+exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1704921103267/work
+executing @ file:///home/conda/feedstock_root/build_artifacts/executing_1698579936712/work
+findspark==2.0.1
+Flask==2.2.5
+Flask-AppBuilder==4.3.11
+Flask-Babel==2.0.0
+Flask-Caching==2.1.0
+Flask-JWT-Extended==4.6.0
+Flask-Limiter==3.5.1
+Flask-Login==0.6.3
+Flask-Session==0.5.0
+Flask-SQLAlchemy==2.5.1
+Flask-WTF==1.2.1
+flower==2.0.1
+frozenlist==1.4.1
+fsspec==2024.2.0
+gcloud-aio-auth==4.2.3
+gcloud-aio-bigquery==7.1.0
+gcloud-aio-storage==9.2.0
+geographiclib==2.0
+geopy==2.4.1
+google-ads==23.1.0
+google-api-core==2.17.1
+google-api-python-client==2.121.0
+google-auth==2.28.2
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.0
+google-cloud-aiplatform==1.43.0
+google-cloud-appengine-logging==1.4.3
+google-cloud-audit-log==0.2.5
+google-cloud-automl==2.13.3
+google-cloud-bigquery==3.19.0
+google-cloud-bigquery-datatransfer==3.15.1
+google-cloud-bigtable==2.23.0
+google-cloud-build==3.23.3
+google-cloud-compute==1.18.0
+google-cloud-container==2.43.0
+google-cloud-core==2.4.1
+google-cloud-datacatalog==3.18.3
+google-cloud-dataflow-client==0.8.10
+google-cloud-dataform==0.5.9
+google-cloud-dataplex==1.12.3
+google-cloud-dataproc==5.9.3
+google-cloud-dataproc-metastore==1.15.3
+google-cloud-dlp==3.16.0
+google-cloud-kms==2.21.3
+google-cloud-language==2.13.3
+google-cloud-logging==3.9.0
+google-cloud-memcache==1.9.3
+google-cloud-monitoring==2.19.3
+google-cloud-orchestration-airflow==1.12.1
+google-cloud-os-login==2.14.3
+google-cloud-pubsub==2.20.1
+google-cloud-redis==2.15.3
+google-cloud-resource-manager==1.12.3
+google-cloud-secret-manager==2.18.3
+google-cloud-spanner==3.43.0
+google-cloud-speech==2.25.1
+google-cloud-storage==2.15.0
+google-cloud-tasks==2.16.3
+google-cloud-texttospeech==2.16.3
+google-cloud-translate==3.15.3
+google-cloud-videointelligence==2.13.3
+google-cloud-vision==3.7.2
+google-cloud-workflows==1.14.3
+google-crc32c==1.5.0
+google-re2==1.1
+google-resumable-media==2.7.0
+googleapis-common-protos==1.62.0
+greenlet==3.0.3
+grpc-google-iam-v1==0.13.0
+grpc-interceptor==0.15.4
+grpcio==1.62.1
+grpcio-gcp==0.2.2
+grpcio-status==1.62.1
+gunicorn==21.2.0
+h11==0.14.0
+httpcore==0.16.3
+httplib2==0.22.0
+httpx==0.23.3
+humanize==4.9.0
+idna==3.6
+importlib-metadata==6.11.0
+importlib-resources==6.1.1
+inflection==0.5.1
+ipykernel @ file:///D:/bld/ipykernel_1708996677248/work
+ipython @ file:///D:/bld/ipython_1709559926914/work
+itsdangerous==2.1.2
+jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1696326070614/work
+jellyfish==0.11.2
+Jinja2==3.1.3
+json-merge-patch==0.2
+jsonschema==4.21.1
+jsonschema-specifications==2023.12.1
+jupyter_client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1699283905679/work
+jupyter_core @ file:///D:/bld/jupyter_core_1704727252411/work
+kombu==5.3.5
+lazy-object-proxy==1.10.0
+limits==3.9.0
+linkify-it-py==2.0.3
+lockfile==0.12.2
+looker-sdk==24.2.0
+Mako==1.3.2
+markdown-it-py==3.0.0
+MarkupSafe==2.1.5
+marshmallow==3.20.2
+marshmallow-oneofschema==3.1.1
+marshmallow-sqlalchemy==0.26.1
+matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/work
+mdit-py-plugins==0.4.0
+mdurl==0.1.2
+mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
+mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
+mkl-service==2.4.0
+more-itertools==10.2.0
+multidict==6.0.5
+nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1705850609492/work
+numpy @ file:///C:/b/abs_c1ywpu18ar/croot/numpy_and_numpy_base_1708638681471/work/dist/numpy-1.26.4-cp311-cp311-win_amd64.whl#sha256=5dfd3e04dc1c2826d3f404fdc7f93c097901f5da9b91f4f394f79d4e038ed81d
+oauthlib==3.2.2
+openpyxl==3.1.2
+opentelemetry-api==1.23.0
+opentelemetry-exporter-otlp==1.23.0
+opentelemetry-exporter-otlp-proto-common==1.23.0
+opentelemetry-exporter-otlp-proto-grpc==1.23.0
+opentelemetry-exporter-otlp-proto-http==1.23.0
+opentelemetry-proto==1.23.0
+opentelemetry-sdk==1.23.0
+opentelemetry-semantic-conventions==0.44b0
+ordered-set==4.1.0
+packaging==23.2
+pandas==2.2.1
+pandas-gbq==0.22.0
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1638334955874/work
+pathspec==0.12.1
+pendulum==3.0.0
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
+platformdirs @ file:///home/conda/feedstock_root/build_artifacts/platformdirs_1706713388748/work
+pluggy==1.4.0
+prison==0.2.1
+prometheus_client==0.20.0
+prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1702399386289/work
+proto-plus==1.23.0
+protobuf==4.25.3
+psutil @ file:///D:/bld/psutil_1705722591889/work
+pure-eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1642875951954/work
+py4j==0.10.9.7
+pyarrow @ file:///C:/b/abs_93i_y2dub4/croot/pyarrow_1707330894046/work/python
+pyarrow-hotfix==0.6
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pycparser==2.21
+pydata-google-auth==1.8.2
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1700607939962/work
+PyJWT==2.8.0
+pyOpenSSL==24.1.0
+pyparsing==3.1.2
+pyspark==3.5.1
+python-daemon==3.0.1
+python-dateutil==2.8.2
+python-nvd3==0.15.0
+python-slugify==8.0.4
+pytz==2024.1
+pywin32==306
+PyYAML==6.0.1
+pyzmq @ file:///D:/bld/pyzmq_1701783313681/work
+referencing==0.33.0
+requests==2.31.0
+requests-oauthlib==1.4.0
+requests-toolbelt==1.0.0
+reverse-geocoder==1.5.1
+rfc3339-validator==0.1.4
+rfc3986==1.5.0
+rich==13.7.0
+rich-argparse==1.4.0
+rpds-py==0.18.0
+rsa==4.9
+scipy==1.12.0
+setproctitle==1.3.3
+shapely==2.0.3
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sniffio==1.3.0
+SQLAlchemy==1.4.51
+sqlalchemy-bigquery==1.10.0
+SQLAlchemy-JSONField==1.0.2
+SQLAlchemy-Utils==0.41.1
+sqlparse==0.4.4
+stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
+tabulate==0.9.0
+tenacity==8.2.3
+termcolor==2.4.0
+text-unidecode==1.3
+time-machine==2.13.0
+tornado @ file:///D:/bld/tornado_1708363244199/work
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1704212992681/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1708904622550/work
+tzdata==2024.1
+uc-micro-py==1.0.3
+unicodecsv==0.14.1
+universal-pathlib==0.1.4
+uritemplate==4.1.1
+urllib3==2.0.7
+us==3.1.1
+vine==5.1.0
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1704731205417/work
+Werkzeug==2.2.3
+wrapt==1.16.0
+WTForms==3.1.2
+XlsxWriter==3.2.0
+yarl==1.9.4
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1695255097490/work
