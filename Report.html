@@ -7544,7 +7544,7 @@ Convert the attached JSON files into relational tables in an Excel file. Key tab
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Architecture">Architecture<a class="anchor-link" href="#Architecture">¶</a></h3><p>Since startups always place a focus on the iterative ability on the architecture, <em><strong>snowflake</strong></em> schema is perferred to achieve both iterative ability and logical isolation (expect to expand in future following the Kimball Methodology)</p>
 <p>For this case study, I chose to construct a fact table for tax history assessment <em><strong>factTaxHistory</strong></em>, a main dimensional table for properties <em><strong>dimProperties</strong></em>, and subdimensional tables for addresses, descriptions and utilities <em><strong>dimAddress</strong></em>, <em><strong>dimDescription</strong></em>, <em><strong>dimUtility</strong></em>.</p>
-<p>I utilized <em><strong>Spark</strong></em> to implement the ETL processes to extract and integrate the source data of scraped json files from <em><strong>Zillow</strong></em> and <em><strong>Realtor</strong></em>, transform the data into a relational table schema, load into the destination of an excel file.</p>
+<p>I utilized <em><strong>Spark</strong></em> to implement the ETL processes to extract and integrate the source data of scraped json files from <em><strong>Zillow</strong></em> and <em><strong>Realtor</strong></em>, transform the data into a relational table schema, load into the destination of an excel file. (In practical cases, insert or upsert actions should be operated to merge data into a data warehouse)</p>
 </div>
 </div>
 </div>
@@ -7678,20 +7678,6 @@ For function of $\arcsin(\sqrt{x^{2}})=\arcsin x = x + o(x^2)$</p>
 <li>While the ATTOM schema keeps heavy data redundancy for the convenience of business analyses (such as splitting street address into several columns, keeping isolated sections for information of attic, parking, garage), it somehow tends to guide the future trends of property data schema. However, from the view of a startup company, heavy data redundancy could lead to low data quality (such as data sparsity) and a burden of infrastructure cost (compute and storage).</li>
 <li>The ATTOM schema sets strict data types for each column. But startups focus more on the iterative ability of the architecture. In the early phase of development, it should be avoided that excessive effort is put into optimization.</li>
 </ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=900b1f9c-a359-4349-a11c-0b2c0b68b63a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
 </div>
 </div>
 </div>
